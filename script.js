@@ -1,22 +1,25 @@
 /*  country.name, '.' using Dot Notation to access data */
 
-let country = {
+let myRunningClub = {
 
-  name: "England",
-  population: 4.224,
-  sea: true,
-  islands: 1000,
-  rivers: {
-    amount: 198,
-    fish: "yes",
-    boats: "yes",
-    swimming: "no"
+  uklocation: "London",
+  annualMembershipCost: 100.00,
+  locationOfRuns: 10,
+  numberOfMembers: 17,
+  memberNamesandTimes: {
+    john: 15.231,
+    sally: 15.235,
+    lisa: 16.12,
+    mark: 16.14,
+    joe: 16.25,
+    harry: 16.30
+
   } 
 
 
 };
 
-country.name = "ireland";  /*usng dot notation, this is updating the object value*/
-console.log(country.name); /*using dot notation to get the objects value*/
+myRunningClub.uklocation = "ireland";  /*usng dot notation, this is updating the object value*/
+console.log(myRunningClub.uklocation); /*using dot notation to get the objects value*/
 
-console.log (country.rivers.amount); /*using dot natation twice to get inner object */
+console.log (myRunningClub.memberNamesandTimes.john); /*using dot natation twice to get inner object */
